@@ -5,9 +5,9 @@ import { HiOutlinePlus } from "react-icons/hi";
 
 const Header = () => {
     return (
-        <div className='flex items-center justify-between h-16 w-ful shadow-lg'>
+        <div className='flex items-center justify-between h-20 w-ful shadow-lg px-10'>
             <input type="text" placeholder="Search here..." class="input input-bordered w-full max-w-xs" />
-            <div className='flex items-center gap-10'>
+            <div className='flex items-center gap-6'>
                 <button className="flex items-center gap-3 h-10 text-lg border border-gray-600 py-2 px-2 rounded-xl text-gray-300">
                     <img src={flag} alt="flag" />
                     <p>En</p>

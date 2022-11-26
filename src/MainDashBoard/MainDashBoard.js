@@ -22,8 +22,8 @@ const MainDashBoard = () => {
                         <MenuItem className='text-danger'> Sign Out</MenuItem>
                     </Menu>
                 </Sidebar>
-                <main style={{ width: "100%" }} className="px-3 py-3">
-<Header></Header>
+                <main style={{ width: "100%" }}>
+                    <Header />
                 </main>
             </div>
         </ProSidebarProvider>
