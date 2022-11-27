@@ -1,0 +1,14 @@
+.swal2-input, .swal2-file, .swal2-textarea {
+    border-radius: .5em;
+    box-shadow:none;
+}
+.swal2-title {
+
+    text-align: start ;
+}
+.swal2-input-label {
+    text-align: start ;
+    margin:  1em 2em 3px;
+justify-content: left;
+font-weight: 600;
+}
