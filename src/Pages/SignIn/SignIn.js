@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import signIn from '../../assets/images/signin.png';
 import './SignIn.css';
 
@@ -31,7 +32,7 @@ const SignIn = () => {
                <div>
                   <p className='text-lg'>
                      Create an Account
-                     <span className='text-accent ml-2'>Sign Up</span>
+                    <Link to='/signUp'><span className='text-accent ml-2' >Sign Up</span></Link> 
                   </p>
                </div>
                </form>

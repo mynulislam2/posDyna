@@ -4,6 +4,7 @@ import { HiOutlinePlus } from "react-icons/hi";
 import Swal from 'sweetalert2';
 import './Header.css'
 import Notifications from '../Notifications/Notifications';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isShowNotifi, setisShowNotifi] = useState(false)
@@ -45,24 +46,22 @@ const Header = () => {
 
 
                 <Notifications display={isShowNotifi} />
-                <img className='h-14 rounded-xl' src='https://templates.iqonic.design/posdash/html/assets/images/user/1.png' alt="flag" />
-                {/* <div class="dropdown dropdown-end">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                         <div class="w-10 rounded-full">
-                            <img src="https://placeimg.com/80/80/people" />
+                        <img className='h-14 rounded-xl' src='https://templates.iqonic.design/posdash/html/assets/images/user/1.png' alt="flag" />
                         </div>
                     </label>
                     <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                         <li>
                             <a class="justify-between">
                                 Profile
-                                <span class="badge">New</span>
                             </a>
                         </li>
                         <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><Link to='/signIn'>Logout</Link></li>
                     </ul>
-                </div> */}
+                </div>
             </div>
 
 
