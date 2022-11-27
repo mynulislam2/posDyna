@@ -10,19 +10,19 @@ const SignUp = () => {
                <h1 className="text-4xl font-bold mb-7">Sign Up</h1>
                <p className='text-lg text-gray mt-3 mb-5'>Create your POSDash account.</p>
                <form action="">
-               <div className='mb-8 flex gap-4'>
+               <div className='mb-4 flex gap-2'>
                   <input type="text" placeholder="First Name" className="input input-bordered w-full" />
                   <input type="text" placeholder="Last Name" className="input input-bordered w-full" />
                </div>
-               <div className='mb-8 flex gap-4'>
+               <div className='mb-4 flex gap-2'>
                   <input type="email" placeholder="Email" className="input input-bordered w-full" />
                   <input type="text" placeholder="Phone No." className="input input-bordered w-full" />
                </div>
-               <div className='mb-8 flex gap-4'>
+               <div className='mb-4 flex gap-2'>
                   <input type="password" placeholder="Password" className="input input-bordered w-full" />
                   <input type="password" placeholder="Confirm Password" className="input input-bordered w-full" />
                </div>
-               <div className='mb-8'>
+               <div className='mb-4'>
                   <div className='flex items-center gap-3'>
                      <input type="radio" name="radio-4" className="radio radio-accent" />
                      <p className='text-lg'>I agree with the terms of use</p>

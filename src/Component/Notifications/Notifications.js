@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Notifications = ({ display }) => {
+const Notifications = ({ display ,title}) => {
     return (
-        <div tabIndex='1' className={`${display ? 'block' : "hidden"} card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
+        <div  className={`${display ? 'block' : "hidden"} card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
             <div class="card-body text-gray-dark">
                 <div className='flex justify-between items-center w-full border-b border-gray-light pb-4'>
-                    <h2 class="card-title">All Messages!</h2>
+                    <h2 class="card-title">{title}</h2>
                     <div class="badge badge-primary badge-outline">1</div>
 
                 </div>
