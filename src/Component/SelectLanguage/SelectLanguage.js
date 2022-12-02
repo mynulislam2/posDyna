@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SelectLanguage = ({ display }) => {
+const SelectLanguage = ({display}) => {
     return (
-        <div className={`${display ? 'block' : "hidden"} card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
+        <div id="slectLangDiv" className={`${display?'block':' hidden'} card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
             <div class="card-body text-gray-dark">
                 <div className='flex justify-between items-center w-full pb-4'>
                     <h2 class="card-title">Select Your Language</h2>

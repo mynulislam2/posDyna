@@ -67,9 +67,9 @@ const MainDashBoard = () => {
                         </SubMenu>
                     </Menu>
                 </Sidebar>
-                <main style={{ width: "100%" }}>
+                <main  style={{ width: "100%" }}>
                     <Header />
-<div style={{height:"120vh"}}>
+<div  style={{height:"120vh"}}>
 
     sddjfjhdsf
 </div>

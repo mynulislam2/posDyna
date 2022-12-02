@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Notifications = ({ display ,title}) => {
+const Notifications = ({display, title,right,top}) => {
     return (
-        <div  className={`${display ? 'block' : "hidden"} card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
+        <div style={{right:right,top:top}} id="Notifications"  className={`${display?'block ':' hidden'}  card w-80 bg-base-100 border border-gray-light top-20 absolute text-primary-content`}>
             <div class="card-body text-gray-dark">
                 <div className='flex justify-between items-center w-full border-b border-gray-light pb-4'>
                     <h2 class="card-title">{title}</h2>
