@@ -5,9 +5,9 @@ import signIn from '../../assets/images/signin.png';
 const SignUp = () => {
    return (
       <div className='singIn'>
-         <div className='flex items-center justify-between w-[55%] border border-gray h-[80%] rounded-2xl p-11'>
+         <div className='flex items-center justify-between w-[60%] border border-gray h-[84%] rounded-2xl p-11'>
             <div className='w-[50%]'>
-               <h1 className="text-4xl font-bold mb-7">Sign Up</h1>
+               <h1 className="text-3xl font-bold mb-7">Sign Up</h1>
                <p className='text-lg text-gray mt-3 mb-5'>Create your POSDash account.</p>
                <form action="">
                <div className='mb-4 flex gap-2'>

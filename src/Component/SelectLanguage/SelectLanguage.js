@@ -10,11 +10,11 @@ const SelectLanguage = ({display}) => {
 
                 </div>
                 <div >
-                    <a class="block py-2 w-full" href="#"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-02.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>French</a>
-                    <a class="block py-2 w-full" href="#"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-03.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Spanish</a>
-                    <a class="block py-2 w-full" href="#"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-04.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Italian</a>
-                    <a class="block py-2 w-full" href="#"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-05.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>German</a>
-                    <a class="block py-2 w-full" href="#"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-06.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Japanese</a>
+                    <a class="block py-2 w-full" href="/"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-02.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>French</a>
+                    <a class="block py-2 w-full" href="/"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-03.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Spanish</a>
+                    <a class="block py-2 w-full" href="/"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-04.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Italian</a>
+                    <a class="block py-2 w-full" href="/"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-05.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>German</a>
+                    <a class="block py-2 w-full" href="/"><img src="https://templates.iqonic.design/posdash/html/assets/images/small/flag-06.png" alt="img-flag" class="max-w-full inline-block h-auto mr-2"/>Japanese</a>
                 </div>
 
 
