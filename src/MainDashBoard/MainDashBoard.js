@@ -17,7 +17,7 @@ const MainDashBoard = () => {
   return (
     <ProSidebarProvider>
       <div style={{ display: "flex", height: "100%", minHeight: "100vh" }}>
-          <Sidebar style={{ boxShadow: "0px 16px 15px 0px rgb(0 0 0 / 7%)"}}>
+          <Sidebar className="h-[100vh]" style={{ boxShadow: "0px 16px 15px 0px rgb(0 0 0 / 7%)"}}>
             <div className="d-flex align-items-center justify-content-center ">
               <img
                 width="200px"
