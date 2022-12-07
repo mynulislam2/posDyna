@@ -1,101 +1,81 @@
-import React from "react";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { ProSidebarProvider } from "react-pro-sidebar";
-import Header from "../Component/Header/Headers";
-import brandlogo from "../assets/images/brandLogo.png";
-import { BiCube, BiPurchaseTag } from "react-icons/bi";
-import { AiOutlineShopping, AiOutlinePieChart } from "react-icons/ai";
-import { GrCatalogOption } from "react-icons/gr";
-import { TbMessageReport } from "react-icons/tb";
-import {
-  BsArrowsAngleContract,
-  BsPeople,
-  BsReverseLayoutTextSidebarReverse,
-} from "react-icons/bs";
+import React from 'react';
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { ProSidebarProvider } from 'react-pro-sidebar';
+import { Link } from 'react-router-dom';
+import Header from '../Component/Header/Headers';
+import brandlogo from '../assets/images/brandLogo.png'
+import { FaDashcube, FaCartPlus, FaListAlt, FaChartPie } from "react-icons/fa";
+
+
+
+
+
+
+
 
 const MainDashBoard = () => {
   return (
-    <ProSidebarProvider>
-      <div style={{ display: "flex", height: "100%", minHeight: "100vh" }}>
-          <Sidebar className="h-[100vh]" style={{ boxShadow: "0px 16px 15px 0px rgb(0 0 0 / 7%)"}}>
-            <div className="d-flex align-items-center justify-content-center ">
-              <img
-                width="200px"
-                src={brandlogo}
-                className="py-4 img-fluid mx-auto"
-                alt="logo"
-              />
-            </div>
-            <Menu>
-              <SubMenu icon={<BiCube />} label="Dashboards">
-                <MenuItem> Pie charts</MenuItem>
-                <MenuItem> Line charts</MenuItem>
-                <MenuItem> Bar charts</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<AiOutlineShopping />} label="Products">
-                <MenuItem> Google maps</MenuItem>
-                <MenuItem> Open street maps</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<GrCatalogOption />} label="Categories">
-                <MenuItem> Dark</MenuItem>
-                <MenuItem> Light</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<AiOutlinePieChart />} label="Sale">
-                <MenuItem> Pie charts</MenuItem>
-                <MenuItem> Line charts</MenuItem>
-                <MenuItem> Bar charts</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<BiPurchaseTag />} label="Purchases">
-                <MenuItem> Google maps</MenuItem>
-                <MenuItem> Open street maps</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<BsArrowsAngleContract />} label="Returns">
-                <MenuItem> Dark</MenuItem>
-                <MenuItem> Light</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<BsPeople />} label="People">
-                <MenuItem> Pie charts</MenuItem>
-                <MenuItem> Line charts</MenuItem>
-                <MenuItem> Bar charts</MenuItem>
-              </SubMenu>
-              <SubMenu icon={<TbMessageReport />} label="Reports">
-                <MenuItem> Google maps</MenuItem>
-                <MenuItem> Open street maps</MenuItem>
-              </SubMenu>
-              <SubMenu
-                icon={<BsReverseLayoutTextSidebarReverse />}
-                label="Other Page"
-              >
-                <MenuItem> Dark</MenuItem>
-                <MenuItem> Light</MenuItem>
-              </SubMenu>
-            </Menu>
-          </Sidebar>
-          <main style={{ width: "100%" }}>
-            <Header />
-            <div className="w-[100%] p-8">
-                
-                {/* main content */}
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laudantium deleniti asperiores ratione quisquam esse, illum illo distinctio ad omnis consequatur eum et saepe alias. Ad id, iste et officia incidunt nemo soluta eos harum? Quis cupiditate sit minima enim totam assumenda atque, voluptate nihil quod quo eos omnis at mollitia iure? Animi possimus sint repudiandae, blanditiis ipsa excepturi laudantium maiores non eius, dignissimos commodi mollitia fugiat dolores, velit porro aliquam nesciunt fuga harum eaque explicabo officia sunt pariatur voluptatibus! Qui optio, soluta, earum perspiciatis reiciendis ipsam excepturi hic praesentium sapiente distinctio possimus quia nesciunt repellat beatae, est enim commodi blanditiis voluptas. Quasi ad dolor totam labore architecto quia nihil at dolorum cupiditate asperiores maiores quibusdam earum necessitatibus ratione voluptates modi itaque consectetur similique corrupti, hic porro accusantium. Modi perspiciatis quo nisi distinctio explicabo eius enim repellat et porro. Enim dolores nesciunt quas dolore ut eveniet dicta minus optio id, sed facere beatae a sit, voluptatibus neque, ullam eligendi incidunt sapiente natus? Dolore, accusantium sequi. Impedit non debitis odio, neque esse, officiis est eum, illum provident pariatur iste? Hic accusantium voluptate accusamus veritatis est ab. Natus, impedit praesentium placeat aperiam minus dolores laborum delectus cum officia. Dolores beatae velit a?</h1>
+    <ProSidebarProvider >
 
-            </div>
-          </main>
-        </div>
+      <div style={{ display: 'flex', justifyContent: "space-between", height: '100%', width:"100%" }}>
+
+        <Sidebar style={{ boxShadow: "0px 16px 15px 0px rgb(0 0 0 / 7%)", position: "fixed", overflow: "hidden", width: "25%" }}>
+          <div className='d-flex align-items-center justify-content-center '>
+            <img width="200px" src={brandlogo} className="py-4 img-fluid mx-auto" alt="" />
+          </div>
+          {/* <Menu className='fixed' style={{width:"249px"}} > */}
+          <Menu  >
+
+            <SubMenu icon={<FaDashcube />} label="Dashboards">
+              <MenuItem> Pie charts</MenuItem>
+              <MenuItem> Line charts</MenuItem>
+              <MenuItem> Bar charts</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Products">
+              <MenuItem> Google maps</MenuItem>
+              <MenuItem> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Categories">
+              <MenuItem> Dark</MenuItem>
+              <MenuItem> Light</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Sale">
+              <MenuItem> Pie charts</MenuItem>
+              <MenuItem> Line charts</MenuItem>
+              <MenuItem> Bar charts</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Purchases">
+              <MenuItem> Google maps</MenuItem>
+              <MenuItem> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Returns">
+              <MenuItem> Dark</MenuItem>
+              <MenuItem> Light</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="People">
+              <MenuItem> Pie charts</MenuItem>
+              <MenuItem> Line charts</MenuItem>
+              <MenuItem> Bar charts</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Reports">
+              <MenuItem> Google maps</MenuItem>
+              <MenuItem> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<FaDashcube />} label="Other Page">
+              <MenuItem> Dark</MenuItem>
+              <MenuItem> Light</MenuItem>
+            </SubMenu>
+          </Menu>
+        </Sidebar>
+        <main style={{ width: "70%" }}>
+          <Header />
+          <div style={{ height: "120vh" }}>
+
+            sddjfjhdsf
+          </div>
+        </main>
+
+      </div>
     </ProSidebarProvider>
   );
 };
