@@ -11,11 +11,19 @@ const AllRotes = () => {
     return (
         <Routes>
           <Route path='/' element={<MainDashBoard></MainDashBoard>}>
+
+
+            {/* List of DashBoard components */}
             <Route path='/' element={<Dashboards />}/>
             <Route path='list-category' element={<ListCategory />}/>
+
+
           </Route>
+
+          {/* out of the Dashboard Components */}
           <Route path={pathname.singIn} element={<SignIn />}/>
           <Route path={pathname.singUp} element={<SignUp />}/>
+          
         </Routes>
     );
 };
