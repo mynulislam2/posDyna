@@ -53,7 +53,7 @@ const Header = () => {
     }
 
     return (
-        <div className='flex items-center justify-between h-20 w-full shadow-md px-10  ' style={{ position: "sticky", top: 0, backgroundColor: "white" }}>
+        <div className='flex items-center justify-between h-20 w-full shadow-md px-10' style={{ position: "sticky", top: 0, backgroundColor: "white", zIndex: '10000' }}>
             <input type="text" placeholder="Search here..." class="input input-bordered w-full max-w-xs" />
             <div className='flex items-center gap-8'>
                 <button id="slectLang" onClick={() => { setislShowLanguage(!islShowLanguage); HandleMenu() }} className="relative flex items-center gap-3 h-10 text-lg border border-gray-light  py-2 px-2 rounded-xl text-gray-300">

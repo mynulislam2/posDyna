@@ -78,7 +78,7 @@ const MainDashBoard = () => {
       </Sidebar>
       <main style={{ width: "81%" }}>
         <Header />
-        <div className="p-5" style={{ height: "120vh" }}>
+        <div className="p-5">
 
 
           {/* rendering dasboard components */}

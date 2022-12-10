@@ -3,7 +3,7 @@ import { AiOutlineEye, AiFillEdit, AiFillDelete } from 'react-icons/ai';
 
 const ListTable = () => {
    return (
-      <div className="overflow-x-auto w-full border rounded-lg border-gray-light">
+      <div className="overflow-x-auto w-full border rounded-lg border-gray-light mb-5">
          <table className="table w-full">
             <thead>
                <tr>
