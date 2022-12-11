@@ -6,3 +6,6 @@
     z-index: 3;
     background-color: rgb(249,249,249,0.7);
 }
+.sub-menu-content{
+    overflow: hidden!important;
+}
