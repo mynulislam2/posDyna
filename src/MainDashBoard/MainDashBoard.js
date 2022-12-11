@@ -9,6 +9,8 @@ import { BiCube, BiPurchaseTag } from "react-icons/bi";
 import { AiOutlineShopping, AiOutlinePieChart } from "react-icons/ai";
 import { GrCatalogOption } from "react-icons/gr";
 import { TbMessageReport } from "react-icons/tb";
+import { AiOutlineMinus } from "react-icons/ai";
+
 import {
   BsArrowsAngleContract,
   BsPeople,
@@ -16,74 +18,76 @@ import {
 } from "react-icons/bs";
 import './MainDash.css'
 
-const MainDashBoard = () => {
+const MainDashBoard = ({ props }) => {
   return (
     <ProSidebarProvider >
 
       <div style={{ display: 'flex', justifyContent: "space-between", height: '100%', width: "100%" }}>
 
-        <Sidebar style={{ boxShadow: "rgb(0 0 0 / 7%) 0px 16px 15px 0px",
-        overflow: "hidden !important",
-        height: "100vh",
-        position: "sticky",
-        width: "19%",
-        top: 0 }}>
-        <div className='d-flex align-items-center justify-content-center '>
-          <img width="200px" src={brandlogo} className="py-4 img-fluid mx-auto" alt="logo" />
-        </div>
-        {/* <Menu className='fixed' style={{width:"249px"}} > */}
-        <Menu  >
+        <Sidebar style={{
+          boxShadow: "rgb(0 0 0 / 7%) 0px 16px 15px 0px",
+          overflow: "hidden !important",
+          height: "100vh",
+          position: "sticky",
+          width: "19%",
+          top: 0
+        }}>
+          <div className='d-flex align-items-center justify-content-center '>
+            <img width="200px" src={brandlogo} className="py-4 img-fluid mx-auto" alt="logo" />
+          </div>
+          {/* <Menu className='fixed' style={{width:"249px"}} > */}
+          <Menu  >
 
-        <Link to={pathname.home}><MenuItem icon={<BiCube />}> Dashboards</MenuItem></Link>
-          <SubMenu icon={<AiOutlineShopping />} label="Products">
-            <MenuItem> Google maps</MenuItem>
-            <MenuItem> Open street maps</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<GrCatalogOption />} label="Categories">
-            <Link to={pathname.listCategory}><MenuItem> List Category</MenuItem></Link>
-            <MenuItem> Light</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<AiOutlinePieChart />} label="Sale">
-            <MenuItem> Pie charts</MenuItem>
-            <MenuItem> Line charts</MenuItem>
-            <MenuItem> Bar charts</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<BsReverseLayoutTextSidebarReverse />} label="Purchases">
-            <MenuItem> Google maps</MenuItem>
-            <MenuItem> Open street maps</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<BsArrowsAngleContract />} label="Returns">
-            <MenuItem> Dark</MenuItem>
-            <MenuItem> Light</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<BiPurchaseTag />} label="People">
-            <MenuItem> Pie charts</MenuItem>
-            <MenuItem> Line charts</MenuItem>
-            <MenuItem> Bar charts</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<TbMessageReport />} label="Reports">
-            <MenuItem> Google maps</MenuItem>
-            <MenuItem> Open street maps</MenuItem>
-          </SubMenu>
-          <SubMenu icon={<BsPeople />} label="Other Page">
-            <MenuItem> Dark</MenuItem>
-            <MenuItem> Light</MenuItem>
-          </SubMenu>
-        </Menu>
-      </Sidebar>
-      <main style={{ width: "81%" }}>
-        <Header />
-        <div className="p-5">
-
-
-          {/* rendering dasboard components */}
-          <Outlet />
+            <MenuItem routerLink={<Link to={pathname.home} />} icon={<BiCube />}> Dashboards</MenuItem>
+            <SubMenu icon={<AiOutlineShopping />} label="Products">
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<GrCatalogOption />} label="Categories">
+              <MenuItem icon={<AiOutlineMinus />} routerLink={<Link to={pathname.listCategory} />}>List Category</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />} routerLink={<Link to={pathname.addcategory} />}>Add Categories</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<AiOutlinePieChart />} label="Sale">
+              <MenuItem icon={<AiOutlineMinus />}> Pie charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Line charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Bar charts</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<BsReverseLayoutTextSidebarReverse />} label="Purchases">
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<BsArrowsAngleContract />} label="Returns">
+              <MenuItem icon={<AiOutlineMinus />}> Dark</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Light</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<BiPurchaseTag />} label="People">
+              <MenuItem icon={<AiOutlineMinus />}> Pie charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Line charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Bar charts</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<TbMessageReport />} label="Reports">
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
+            </SubMenu>
+            <SubMenu icon={<BsPeople />} label="Other Page">
+              <MenuItem icon={<AiOutlineMinus />}> Dark</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Light</MenuItem>
+            </SubMenu>
+          </Menu>
+        </Sidebar>
+        <main style={{ width: "81%" }}>
+          <Header />
+          <div className="p-5">
 
 
-        </div>
-      </main>
+            {/* rendering dasboard components */}
+            <Outlet />
 
-    </div>
+
+          </div>
+        </main>
+
+      </div>
     </ProSidebarProvider >
   );
 };
