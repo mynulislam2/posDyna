@@ -16,11 +16,6 @@ import {
 } from "react-icons/bs";
 import './MainDash.css'
 
-
-
-
-
-
 const MainDashBoard = () => {
   return (
     <ProSidebarProvider >
