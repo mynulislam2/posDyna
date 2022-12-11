@@ -9,6 +9,8 @@ import { BiCube, BiPurchaseTag } from "react-icons/bi";
 import { AiOutlineShopping, AiOutlinePieChart } from "react-icons/ai";
 import { GrCatalogOption } from "react-icons/gr";
 import { TbMessageReport } from "react-icons/tb";
+import { AiOutlineMinus } from "react-icons/ai";
+
 import {
   BsArrowsAngleContract,
   BsPeople,
@@ -41,40 +43,40 @@ const MainDashBoard = ({ props }) => {
           {/* <Menu className='fixed' style={{width:"249px"}} > */}
           <Menu  >
 
-            <Link to={pathname.home}><MenuItem icon={<BiCube />}> Dashboards</MenuItem></Link>
+            <MenuItem routerLink={<Link to={pathname.home} />} icon={<BiCube />}> Dashboards</MenuItem>
             <SubMenu icon={<AiOutlineShopping />} label="Products">
-              <MenuItem> Google maps</MenuItem>
-              <MenuItem> Open street maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
             </SubMenu>
             <SubMenu icon={<GrCatalogOption />} label="Categories">
-              <Link to={pathname.listCategory}><MenuItem> List Category</MenuItem></Link>
-              <Link to={pathname.addcategory}><MenuItem> Add Categories</MenuItem></Link>
+              <MenuItem icon={<AiOutlineMinus />} routerLink={<Link to={pathname.listCategory} />}>List Category</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />} routerLink={<Link to={pathname.addcategory} />}>Add Categories</MenuItem>
             </SubMenu>
             <SubMenu icon={<AiOutlinePieChart />} label="Sale">
-              <MenuItem> Pie charts</MenuItem>
-              <MenuItem> Line charts</MenuItem>
-              <MenuItem> Bar charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Pie charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Line charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Bar charts</MenuItem>
             </SubMenu>
             <SubMenu icon={<BsReverseLayoutTextSidebarReverse />} label="Purchases">
-              <MenuItem> Google maps</MenuItem>
-              <MenuItem> Open street maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
             </SubMenu>
             <SubMenu icon={<BsArrowsAngleContract />} label="Returns">
-              <MenuItem> Dark</MenuItem>
-              <MenuItem> Light</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Dark</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Light</MenuItem>
             </SubMenu>
             <SubMenu icon={<BiPurchaseTag />} label="People">
-              <MenuItem> Pie charts</MenuItem>
-              <MenuItem> Line charts</MenuItem>
-              <MenuItem> Bar charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Pie charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Line charts</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Bar charts</MenuItem>
             </SubMenu>
             <SubMenu icon={<TbMessageReport />} label="Reports">
-              <MenuItem> Google maps</MenuItem>
-              <MenuItem> Open street maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Open street maps</MenuItem>
             </SubMenu>
             <SubMenu icon={<BsPeople />} label="Other Page">
-              <MenuItem> Dark</MenuItem>
-              <MenuItem> Light</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Dark</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />}> Light</MenuItem>
             </SubMenu>
           </Menu>
         </Sidebar>
