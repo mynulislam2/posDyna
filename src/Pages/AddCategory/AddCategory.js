@@ -4,9 +4,10 @@ const AddCategory = () => {
     return (
         <div className=' border border-gray-light rounded-2xl py-10'>
             <div className='px-10'>
-                <div>
-                    <h4>Add category</h4>
-                </div>
+                <h4>Add category</h4>
+            </div>
+            <div className="divider"></div>
+            <div className='px-10'>
 
                 <div className='py-3'>
                     <p className='mb-2'>Image</p>
