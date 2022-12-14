@@ -37,6 +37,16 @@ const ListCategory = () => {
 
          <ListTable />
 
+         <div className='flex items-center justify-between'>
+            <p>Showing 1 to 9 of 9 entries</p>
+            <div className='flex items-center gap-4'>
+            <button className="bg-blue bg-opacity-80 rounded-lg px-2 text-[#fff]">Previous</button>
+            <p>1</p>
+            <button className="bg-blue bg-opacity-80 rounded-lg px-2 text-[#fff]">Next</button>
+            </div>
+         </div>
+
+         <div className='w-full bg-gray-dark h-2 mt-3 rounded-lg'></div>
       </div>
    );
 };

@@ -15,7 +15,7 @@ const ListTable = () => {
                <th>Image</th>
                <th>Code</th>
                <th>Category</th>
-               <th>Actio</th>
+               <th>Action</th>
                </tr>
             </thead>
             <tbody>
