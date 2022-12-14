@@ -31,7 +31,7 @@ const ListCategory = () => {
             </div>
             <div>
                <label htmlFor="search">Search:</label>
-               <input className='rounded-lg px-2 py-1 border ml-2' type="text" />
+               <input className='rounded-lg px-2 border ml-2' type="text" />
             </div>
          </div>
 

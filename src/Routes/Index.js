@@ -4,6 +4,7 @@ const pathname = {
    singUp: '/signUp',
    addcategory: '/addcategory',
    listCategory: '/list-category',
+   saleList: '/sale-list',
 }
 
 export default pathname;
