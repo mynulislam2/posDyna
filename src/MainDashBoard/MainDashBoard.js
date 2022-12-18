@@ -49,7 +49,7 @@ const MainDashBoard = ({ props }) => {
             </SubMenu>
             <SubMenu icon={<AiOutlinePieChart />} label="Sale">
               <MenuItem routerLink={<Link to={pathname.saleList} />} icon={<AiOutlineMinus />}> List Sale</MenuItem>
-              <MenuItem icon={<AiOutlineMinus />}> Add Sale</MenuItem>
+              <MenuItem icon={<AiOutlineMinus />} routerLink={<Link to={pathname.AddSale} />}> Add Sale </MenuItem>
             </SubMenu>
             <SubMenu icon={<BsReverseLayoutTextSidebarReverse />} label="Purchases">
               <MenuItem icon={<AiOutlineMinus />}> Google maps</MenuItem>
