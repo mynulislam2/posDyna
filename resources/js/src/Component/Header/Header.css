@@ -1,0 +1,20 @@
+.swal2-input, .swal2-file, .swal2-textarea {
+    border-radius: .5em;
+    box-shadow:none;
+}
+.swal2-title {
+    text-align: start ;
+}
+.swal2-input-label {
+    text-align: start ;
+    margin:  1em 2em 3px;
+    justify-content: left;
+    font-weight: 600;
+}
+.input-custom-css input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.input-custom-css input::-webkit-input-placeholder {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,800;1,900;1,1000&display=swap');
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: white!important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 29px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: .01em;
+}
+
+main::-webkit-scrollbar {
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin: 0px;
+  line-height: 1;
+  color: #110A57;
+  font-size: 1.44em;
+}
+
+label {
+  color: #110A57 !important;
+}
+ul li div ul li a{
+  padding-left: 5px !important;
+}
+ul li a span{
+  margin-right: 0px !important;
+}
