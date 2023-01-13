@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 //use Illuminate\Support\Facades\Validator as FacadesValidator;
 //use Illuminate\Validation\Validator;
 //use Illuminate\Validation\Factory;
-use Validator;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
